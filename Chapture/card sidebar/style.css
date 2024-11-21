@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#card-news {
+  transition: 0.5s;
+}
+
+#btns > button[id *= red]{
+    transition: 0.5s;
+
+}
+#btns > button:hover[id *= red] {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+
+#btns > button[id *= green]{
+    transition: 0.5s;
+
+}
+#btns > button:hover[id *= green] {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+
+#btns > button[id *= blue]{
+    transition: 0.5s;
+
+}
+#btns > button:hover[id *= blue] {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+
+#btns > button[id *= waring]{
+    transition: 0.5s;
+
+}
+#btns > button:hover[id *= waring] {
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+
+#btns > button:not([id *="pointer"]) {
+  cursor: auto;
+}
+
+
+#img-sidebar {
+  transition: 0.5s;
+}
+
+#card-news:hover #img-sidebar {
+  transform: scale(1.1);
+}
+
+#progress-dynamic {
+  transition: 0.5s;
+  width: 5%;
+  height: 3%;
+}
+
+#card-news:hover #progress-dynamic {
+  width: 17%;
+  height: 3%;
+}

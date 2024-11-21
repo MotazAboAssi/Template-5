@@ -1,0 +1,40 @@
+.icon-container {
+  background: black;
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0px 0px 5px 0px #fff;
+
+  transform: scale(1.1);
+}
+
+.icon-container i {
+  text-shadow: -2px 2px 2px rgb(255, 255, 255, 0.5);
+  font-size: 30px;
+  /* color: #1da1f2; */
+}
+
+.icon-container i[class*="whatsapp"] {
+  color: #0bc144;
+}
+
+.icon-container i[class*="twitter"], .icon-container i[class*="link"] {
+  color: #1da1f2;
+}
+.icon-container i[class*="instagram"] {
+  background: -webkit-linear-gradient(#9905e8, #fd03ba,#fe343d, #febd01);
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -ms-background-clip: text;
+  -o-background-clip: text;
+ 
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -ms-text-fill-color: transparent;
+  -o-text-fill-color: transparent;
+}

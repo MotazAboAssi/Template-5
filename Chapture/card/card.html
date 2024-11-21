@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Carousel</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<div id="titleAccordion" class="bg-primary text-white rounded display-3 py-5 text-center text-capitalize">
+popular destination in syria
+</div>
+
+    <div class="accordion" id="sectionAccordion">
+
+        <div class="card rounded">
+            <div class="card-header shadow" id="headingOne">
+                <h2 class="mb-0">
+                    <div class="btn btn-block text-decoration-none text-left" role="button" data-toggle="collapse"
+                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Collapsible Group Item #1
+                    </div>
+                </h2>
+            </div> <!-- /headingOne
+             -->
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#sectionAccordion">
+                <div class="card-body">
+                    Some placeholder content for the first accordion panel. This panel is shown by default, thanks to
+                    the <code>.show</code> class.
+                </div>
+            </div>
+        </div> <!-- /card -->
+
+
+        <div class="card">
+            <div class="card-header shadow" id="headingTwo">
+                <h2 class="mb-0">
+                    <div class="btn btn-block text-decoration-none text-left" role="button" data-toggle="collapse"
+                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Collapsible Group Item #2
+                    </div>
+                </h2>
+            </div> <!-- /headingTwo -->
+            
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#sectionAccordion">
+                <div class="card-body">
+                    Some placeholder content for the second accordion panel. This panel is hidden by default.
+                </div>
+            </div>
+        </div> <!-- /card -->
+
+        <div class="card">
+            <div class="card-header shadow" id="headingThree">
+                <h2 class="mb-0">
+                    <div class="btn btn-block text-decoration-none text-left" role="button" data-toggle="collapse"
+                        data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Collapsible Group Item #3
+                    </div>
+                </h2>
+            </div> <!-- /headingThree -->
+
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#sectionAccordion">
+                <div class="card-body">
+                    And lastly, the placeholder content for the third and final accordion panel. This panel is
+                    hidden by default.
+                </div>
+            </div>
+        </div> <!-- /card -->
+    </div> <!-- /sectionAccordion -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

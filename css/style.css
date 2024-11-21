@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* transition: 1s; */
+}
+
+body {
+  position: relative;
+}
+
+button {
+  text-transform: capitalize;
+}
+
+.requir:hover > button {
+  transform: scale(1.1);
+}
+
+.requir:hover .btn .redscale {
+  font-size: 17px;
+  color: red;
+}
+
+#fontHover > a:active {
+  color: white;
+}
+#fontHover > a {
+  color: #007bff;
+}
+
+.carousel-inner .carousel-item img {
+  width: 100vw;
+  height: 98vh;
+}
+
+#bg-opacity {
+  border-radius: 15px;
+  background-color: rgba(128, 128, 128, 0.8);
+  letter-spacing: 1px;
+}
+
+#buttonRotate {
+  transition: 0.4s;
+}
+
+/* //////////////////////////////////////////////////////////////////////// */
+
+/* icons on sideBar */
+#iconsForInformation {
+  z-index: 10;
+  top: 55%;
+  transform: translate(0, -50%);
+  right: 0%;
+}
+#iconsForInformation > a > i {
+  color: #0400ff;
+}
+
+/* //////////////////////////////////////////////////////////////////////// */
+/* img in background 1*/
+#img_in_background1 {
+  height: 250px;
+  background: url("../images/background1.jpg") center no-repeat fixed;
+  background-size: cover;
+}
+/* //////////////////////////////////////////////////////////////////////// */
+/* img in background 2*/
+#img_in_background2 {
+  height: 250px;
+  background: url("../images/background2.jpg ") center no-repeat fixed;
+  background-size: cover;
+}
+/* ///////////////////////////////////////////////////////////////////////// */
+/* Cards */
+
+#card-item::after {
+  position: absolute;
+  content: "";
+
+  width: 0%;
+  height: 0%;
+
+  top: 0;
+  left: 0;
+
+  opacity: 0;
+
+  background-color: rgb(58, 58, 250);
+  transition: 0.5s;
+}
+
+#card-item:hover::after {
+  width: 100%;
+  height: 100%;
+
+  opacity: 0.5;
+}
+
+#card-item::before {
+  position: absolute;
+  content: "";
+
+  width: 0%;
+  height: 0%;
+
+  bottom: 0;
+  right: 0;
+
+  opacity: 0;
+
+  background-color: rgb(165, 165, 233);
+  transition: 0.5s;
+}
+
+#card-item:hover::before {
+  width: 100%;
+  height: 100%;
+
+  opacity: 0.5;
+}
+
+#card-item:hover #body > *:not([id="titleCard-with-btn"])::selection {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+}
+
+/* ///////////////////////////////////////////////////// */
+/* card for thank */
+
+#overlay-img {
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#img-circle {
+  border-style: solid;
+  border-width: 3px;
+}
+#card-item-for-thank {
+  cursor: pointer;
+  height: 450px;
+}
+
+#card-item-for-thank,
+#card-item-for-thank > div > div {
+  transition: 0.5s;
+}
+#card-item-for-thank:hover {
+  transform: scale(0.8);
+}
+
+@media screen and (max-width: 720px) {
+  #card-item-for-thank {
+    transform: scale(0.9);
+  }
+  #card-item-for-thank:hover {
+    transform: scale(0.7);
+  }
+}
+
+#card-item-for-thank:hover > div > div:first-child {
+  margin-top: 20px;
+}
+
+/* /////////////////////////////////////////////////////////////// */
+/* Card News */
+#card-news {
+  transition: 0.5s;
+}
+
+#btns > button[id*="red"] {
+  transition: 0.5s;
+}
+#btns > button:hover[id*="red"] {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+#btns > button[id*="green"] {
+  transition: 0.5s;
+}
+#btns > button:hover[id*="green"] {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+#btns > button[id*="blue"] {
+  transition: 0.5s;
+}
+#btns > button:hover[id*="blue"] {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+#btns > button[id*="waring"] {
+  transition: 0.5s;
+}
+#btns > button:hover[id*="waring"] {
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+@media screen and (max-width: 410px) {
+  #btns > button[id*="pointer"] {
+    margin-top: 10px;
+  }
+}
+
+#btns > button:not([id*="pointer"]) {
+  cursor: auto;
+}
+
+#img-sidebar {
+  transition: 0.5s;
+}
+
+#card-news:hover #img-sidebar {
+  transform: scale(1.1);
+}
+
+#progress-dynamic {
+  transition: 0.5s;
+  width: 5%;
+  height: 3%;
+}
+
+#card-news:hover #progress-dynamic {
+  width: 17%;
+  height: 3%;
+}
+/* //////////////////////////////////////////////////////////////// */
+/* Icons */
+
+.icon-container {
+  background: black;
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0px 0px 5px 0px #fff;
+
+  transform: scale(1.1);
+}
+
+.icon-container i {
+  text-shadow: -2px 2px 2px rgb(255, 255, 255, 0.5);
+  font-size: 30px;
+  /* color: #1da1f2; */
+}
+
+.icon-container i[class*="whatsapp"] {
+  color: #0bc144;
+}
+
+.icon-container i[class*="twitter"],
+.icon-container i[class*="link"] {
+  color: #1da1f2;
+}
+.icon-container i[class*="instagram"] {
+  background: -webkit-linear-gradient(#9905e8, #fd03ba, #fe343d, #febd01);
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -ms-background-clip: text;
+  -o-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -ms-text-fill-color: transparent;
+  -o-text-fill-color: transparent;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+#vr {
+  display: inline-block;
+  align-self: stretch;
+  width: 1px;
+  min-height: 1em;
+  background-color: currentColor;
+  opacity: 0.25;
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+#navBar{
+background-color: rgb(0, 0, 0, 0.8);}
